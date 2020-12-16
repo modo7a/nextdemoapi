@@ -1,3 +1,6 @@
+@import "../component/Card-component/style/CardComponent.css";
+@import "../component/Footer-component/style/FooterComponent.css";
+@import "../component/Header-component/style/HeaderComponent.css";
 html,
 body {
   padding: 0;
