@@ -19,21 +19,13 @@ export default function Home({data}) {
       </Container>
       <FooterComponent />
 
-      {/* {
-        props.data.map(data=>(
-          <div>
-            {data.title}
 
-
-          </div>
-        ))
-      } */}
     </>
   );
 }
 Home.getInitialProps = async function()
 {
-  const res= await fetch('https://jsonplaceholder.typicode.com/albums');
+  const res= await fetch('https://jsonplaceholder.typicode.com/posts');
   const data= await res.json();
   return {
      data
